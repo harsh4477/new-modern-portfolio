@@ -13,9 +13,9 @@ const workSlides = {
     {
       images: [
         {
-          title: "title",
-          path: "/thumb1.jpg",
-          link: "http://example.com",
+          title: "Portfolio",
+          path: "/thumb11.png",
+          link: "https://harsh-patel.vercel.app/",
         },
         {
           title: "title",
@@ -30,30 +30,6 @@ const workSlides = {
         {
           title: "title",
           path: "/thumb4.jpg",
-          link: "http://example.com",
-        },
-      ],
-    },
-    {
-      images: [
-        {
-          title: "title",
-          path: "/thumb4.jpg",
-          link: "http://example.com",
-        },
-        {
-          title: "title",
-          path: "/thumb1.jpg",
-          link: "http://example.com",
-        },
-        {
-          title: "title",
-          path: "/thumb2.jpg",
-          link: "http://example.com",
-        },
-        {
-          title: "title",
-          path: "/thumb3.jpg",
           link: "http://example.com",
         },
       ],

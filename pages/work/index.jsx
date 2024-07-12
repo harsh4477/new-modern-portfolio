@@ -46,7 +46,7 @@ const Work = () => {
           </motion.div>
         </div>
       </div>
-      {/* <Bulb /> */}
+      <Bulb />
     </div>
   );
 };

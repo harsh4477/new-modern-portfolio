@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import CountUp from "react-countup";
 import {
+  FaBootstrap,
   FaCss3,
   FaFigma,
   FaHtml5,
-  FaJs,
-  FaReact,
+  FaSass,
   FaWordpress,
 } from "react-icons/fa";
 import {
@@ -17,10 +17,8 @@ import {
 } from "react-icons/si";
 
 import Avatar from "../../components/Avatar";
-import Circles from "../../components/Circles";
 import { fadeIn } from "../../variants";
 
-//  data
 export const aboutData = [
   {
     title: "skills",
@@ -30,8 +28,8 @@ export const aboutData = [
         icons: [
           FaHtml5,
           FaCss3,
-          FaJs,
-          FaReact,
+          FaSass,
+          FaBootstrap,
           SiNextdotjs,
           SiFramer,
           FaWordpress,
@@ -47,16 +45,12 @@ export const aboutData = [
     title: "experience",
     info: [
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
+        title: "Web designer - Eastern Techno Solutions",
+        stage: "Jan 2020 - Apr 2021",
       },
       {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
-      },
-      {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
+        title: "Web designer - La Net Team",
+        stage: "Apr 2021 - Present",
       },
     ],
   },
@@ -68,20 +62,17 @@ const About = () => {
   return (
     <div className="h-full bg-primary/100 py-32 text-center xl:text-left">
       {/* <Circles /> */}
-
-      {/* avatar img */}
       <motion.div
         variants={fadeIn("right", 0.2)}
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -right-[370px]"
+        className="hidden xl:flex absolute bottom-0 right-0"
       >
         <Avatar />
       </motion.div>
 
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
-        {/* text */}
         <div className="flex-1 flex flex-col justify-center">
           <motion.h2
             variants={fadeIn("right", 0.2)}
@@ -103,8 +94,6 @@ const About = () => {
             done remote work for agencies, consulted for startups, and
             collabrated on digital products for business and consumer use.
           </motion.p>
-
-          {/* counters */}
           <motion.div
             variants={fadeIn("right", 0.6)}
             initial="hidden"
@@ -112,7 +101,6 @@ const About = () => {
             className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
           >
             <div className="flex flex-1 xl:gap-x-6">
-              {/* experience */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={4} duration={3} />
@@ -124,8 +112,6 @@ const About = () => {
             </div>
           </motion.div>
         </div>
-
-        {/* info */}
         <motion.div
           variants={fadeIn("left", 0.4)}
           initial="hidden"
@@ -154,13 +140,13 @@ const About = () => {
                 key={itemI}
                 className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-center text-white/60"
               >
-                {/* title */}
-                <div className="font-light mb-2 md:mb-0">{item.title}</div>
+                <div className="font-light mb-2 md:mb-0 text-left">
+                  {item.title}
+                </div>
                 <div className="hidden md:flex">-</div>
-                <div>{item.stage}</div>
+                <div className="text-left">{item.stage}</div>
 
                 <div className="flex gap-x-4">
-                  {/* icons */}
                   {item.icons?.map((Icon, iconI) => (
                     <div key={iconI} className="text-2xl text-white">
                       <Icon />
