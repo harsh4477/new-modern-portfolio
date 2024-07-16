@@ -43,7 +43,7 @@
   }
   .input,
   .textarea {
-    @apply transition-all bg-transparent outline-none focus:ring-1 focus:ring-white border border-white/20 placeholder:text-white/30 placeholder:font-light;
+    @apply transition-all bg-transparent outline-none focus:border-white border border-white/20 placeholder:text-white/30 placeholder:font-light;
   }
   .textarea {
     @apply w-full h-[180px] p-4 rounded-lg resize-none transition-all;
