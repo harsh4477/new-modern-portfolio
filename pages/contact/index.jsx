@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { BsArrowRight } from "react-icons/bs";
-
 import { fadeIn } from "../../variants";
 import { Formik, Field, Form } from "formik";
 import { validation } from "./validation.jsx";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const initialValues = {
@@ -11,6 +11,31 @@ const Contact = () => {
     email: "",
     subject: "",
     message: "",
+  };
+
+  const sendEmail = (values, actions) => {
+    emailjs
+      .send(
+        "service_harsh_5199_email",
+        "template_harsh_5199_mail",
+        {
+          name: values.name,
+          email: values.email,
+          subject: values.subject,
+          message: values.message,
+          to_name: "Harsh",
+        },
+        "c93nU1-caQ6OLVoGh"
+      )
+      .then((response) => {
+        console.log("SUCCESS!", response.status, response.text);
+        actions.resetForm();
+        alert("Message sent successfully!");
+      })
+      .catch((error) => {
+        console.log("FAILED...", error);
+        alert("Failed to send the message. Please try again.");
+      });
   };
 
   return (
@@ -32,7 +57,13 @@ const Contact = () => {
             animate="show"
             exit="hidden"
           >
-            <Formik initialValues={initialValues} validationSchema={validation}>
+            <Formik
+              initialValues={initialValues}
+              validationSchema={validation}
+              onSubmit={(values, actions) => {
+                sendEmail(values, actions);
+              }}
+            >
               {({ errors }) => (
                 <Form className="flex-1 flex flex-col gap-6 w-full mx-auto">
                   <div className="grid grid-cols-2 gap-4 w-full">
