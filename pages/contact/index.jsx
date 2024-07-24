@@ -2,10 +2,18 @@ import { motion } from "framer-motion";
 import { BsArrowRight } from "react-icons/bs";
 import { fadeIn } from "../../variants";
 import { Formik, Field, Form } from "formik";
-import { validation } from "./validation.jsx";
 import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
 import { useState } from "react";
+
+const validation = Yup.object({
+  name: Yup.string().min(3).required("Please Enter Name"),
+  email: Yup.string()
+    .email("Please Enter Valid Email")
+    .required("Please Enter Email"),
+  subject: Yup.string().required("Please Enter Subject"),
+  message: Yup.string().required("Please Enter Message"),
+});
 
 const Contact = () => {
   const [isLoading, setIsLoading] = useState(false);
