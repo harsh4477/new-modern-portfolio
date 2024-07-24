@@ -80,7 +80,7 @@ const Contact = () => {
             >
               {({ errors }) => (
                 <Form className="flex-1 flex flex-col gap-6 w-full mx-auto">
-                  <div className="grid grid-cols-2 gap-4 w-full">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
                     <div className="flex flex-col gap-1">
                       <Field
                         className={`input ${
@@ -111,7 +111,7 @@ const Contact = () => {
                         </span>
                       )}
                     </div>
-                    <div className="flex flex-col gap-1 col-span-2">
+                    <div className="flex flex-col gap-1 md:col-span-2">
                       <Field
                         className={`input ${
                           errors.subject ? "border-red-600" : ""
@@ -126,7 +126,7 @@ const Contact = () => {
                         </span>
                       )}
                     </div>
-                    <div className="flex flex-col gap-1 col-span-2">
+                    <div className="flex flex-col gap-1 md:col-span-2">
                       <Field
                         component="textarea"
                         className={`textarea ${
@@ -142,7 +142,7 @@ const Contact = () => {
                         </span>
                       )}
                     </div>
-                    <div className="col-span-2">
+                    <div className="md:col-span-2">
                       <div className="btn rounded-full border border-white/50 max-w-[170px] px-8 flex items-center justify-center overflow-hidden hover:border-accent group">
                         {isLoading ? (
                           <span>Sending...</span>

@@ -2,18 +2,18 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import CountUp from "react-countup";
 import {
-  FaBootstrap,
-  FaCss3,
-  FaFigma,
-  FaHtml5,
-  FaSass,
-  FaWordpress,
-} from "react-icons/fa";
-import {
   SiAdobephotoshop,
-  SiAdobexd,
-  SiFramer,
-  SiNextdotjs,
+  SiAntdesign,
+  SiBootstrap,
+  SiCss3,
+  SiFigma,
+  SiGithub,
+  SiHtml5,
+  SiJavascript,
+  SiMui,
+  SiReact,
+  SiSass,
+  SiTailwindcss,
 } from "react-icons/si";
 
 import Avatar from "../../components/Avatar";
@@ -24,20 +24,24 @@ export const aboutData = [
     title: "skills",
     info: [
       {
-        title: "Web Development",
+        title: "Web Designing",
         icons: [
-          FaHtml5,
-          FaCss3,
-          FaSass,
-          FaBootstrap,
-          SiNextdotjs,
-          SiFramer,
-          FaWordpress,
+          SiHtml5,
+          SiCss3,
+          SiSass,
+          SiBootstrap,
+          SiTailwindcss,
+          SiMui,
+          SiAntdesign,
         ],
       },
       {
+        title: "Web Devloping",
+        icons: [SiGithub, SiJavascript, SiReact],
+      },
+      {
         title: "UI/UX Design",
-        icons: [FaFigma, SiAdobexd, SiAdobephotoshop],
+        icons: [SiFigma, SiAdobephotoshop],
       },
     ],
   },

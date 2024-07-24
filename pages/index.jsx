@@ -19,7 +19,7 @@ const Home = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h1"
+              className="h1 z-50"
             >
               Transforming Ideas <br /> Into{" "}
               <span className="text-accent">Digital Reality</span>
@@ -31,7 +31,7 @@ const Home = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
+              className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 z-50"
             >
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Voluptate, exercitationem harum, quia nulla temporibus deleniti
@@ -48,7 +48,7 @@ const Home = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="hidden xl:flex z-20"
+              className="hidden xl:flex z-50"
             >
               <ProjectsBtn />
             </motion.div>
@@ -60,7 +60,7 @@ const Home = () => {
           {/* <div className="absolute top-0 right-0 w-full h-full bg-primary/100"></div> */}
           <div
             role="img"
-            className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full mix-blend-lighten translate-z-0 opacity-50"
+            className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full mix-blend-hard-light translate-z-0 opacity-30"
             aria-hidden
           />
 
@@ -71,7 +71,7 @@ const Home = () => {
             animate="show"
             exit="hidden"
             transition={{ duration: 1, ease: "easeInOut" }}
-            className="w-full h-full max-w-[635px] max-h-[575px] absolute -bottom-32 lg:bottom-14 lg:right-[8%]"
+            className="w-full h-full max-w-[605px] max-h-[555px] absolute -bottom-32 lg:bottom-12 lg:right-[10%]"
           >
             <Avatar />
           </motion.div>
