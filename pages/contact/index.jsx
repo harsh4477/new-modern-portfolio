@@ -4,8 +4,11 @@ import { fadeIn } from "../../variants";
 import { Formik, Field, Form } from "formik";
 import { validation } from "./validation.jsx";
 import emailjs from "emailjs-com";
+import Swal from "sweetalert2";
+import { useState } from "react";
 
 const Contact = () => {
+  const [isLoading, setIsLoading] = useState(false);
   const initialValues = {
     name: "",
     email: "",
@@ -23,18 +26,28 @@ const Contact = () => {
           email: values.email,
           subject: values.subject,
           message: values.message,
-          to_name: "Harsh",
+          to_name: "Harsh Patel",
         },
         "c93nU1-caQ6OLVoGh"
       )
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
         actions.resetForm();
-        alert("Message sent successfully!");
+        Swal.fire({
+          icon: "success",
+          title: "Email sent successfully!",
+          showConfirmButton: false,
+          timer: 3000,
+        });
+        setIsLoading(false);
       })
       .catch((error) => {
         console.log("FAILED...", error);
-        alert("Failed to send the message. Please try again.");
+        Swal.fire({
+          icon: "error",
+          title: "Failed to send the Email.",
+          text: "Please try again.",
+        });
       });
   };
 
@@ -61,6 +74,7 @@ const Contact = () => {
               initialValues={initialValues}
               validationSchema={validation}
               onSubmit={(values, actions) => {
+                setIsLoading(true);
                 sendEmail(values, actions);
               }}
             >
@@ -129,19 +143,25 @@ const Contact = () => {
                       )}
                     </div>
                     <div className="col-span-2">
-                      <button
-                        type="submit"
-                        className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
-                      >
-                        <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
-                          Let's talk
-                        </span>
+                      <div className="btn rounded-full border border-white/50 max-w-[170px] px-8 flex items-center justify-center overflow-hidden hover:border-accent group">
+                        {isLoading ? (
+                          <span>Sending...</span>
+                        ) : (
+                          <button
+                            type="submit"
+                            className="btn transition-all duration-300 flex items-center justify-center overflow-hidden"
+                          >
+                            <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
+                              Let's talk
+                            </span>
 
-                        <BsArrowRight
-                          className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]"
-                          aria-hidden
-                        />
-                      </button>
+                            <BsArrowRight
+                              className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]"
+                              aria-hidden
+                            />
+                          </button>
+                        )}
+                      </div>
                     </div>
                   </div>
                 </Form>
