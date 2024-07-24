@@ -5,6 +5,7 @@ import { Formik, Field, Form } from "formik";
 import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
 import { useState } from "react";
+import * as Yup from "yup";
 
 const validation = Yup.object({
   name: Yup.string().min(3).required("Please Enter Name"),
