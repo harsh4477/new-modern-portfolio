@@ -50,6 +50,10 @@
   }
 }
 
+.swiper .swiper-wrapper {
+  height: 90%;
+}
+
 .swal2-container {
   backdrop-filter: blur(3px);
 }

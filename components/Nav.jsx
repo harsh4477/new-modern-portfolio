@@ -15,7 +15,7 @@ import {
 export const navData = [
   { name: "home", path: "/", Icon: HiHome },
   { name: "about", path: "/about", Icon: HiUser },
-  // { name: "services", path: "/services", Icon: HiRectangleGroup },
+  { name: "What I Offer", path: "/services", Icon: HiRectangleGroup },
   { name: "work", path: "/work", Icon: HiViewColumns },
   {
     name: "contact",
@@ -41,16 +41,16 @@ const Nav = () => {
             {/* tolltip */}
             <div
               role="tooltip"
-              className="absolute pl-14 left-0 hidden xl:group-hover:flex"
+              className="absolute pl-[66px] left-0 hidden xl:group-hover:flex transi duration-300"
             >
-              <div className="bg-white relative flex text-primary items-center p-[6px] rounded-[3px]">
-                <div className="text-[12px] leading-none font-semibold capitalize">
+              <div className="bg-[#1a1a1a] relative flex text-white items-center p-2 rounded-[3px] ">
+                <div className="text-[13px] leading-none font-semibold capitalize w-20 text-center">
                   {link.name}
                 </div>
 
                 {/* triangle */}
                 <div
-                  className="border-solid border-l-white border-r-8 border-y-transparent border-y-[6px] border-l-0 absolute -left-2"
+                  className="border-solid border-r-[#1a1a1a] border-r-8 border-y-transparent border-y-[6px] border-l-0 absolute -left-2"
                   aria-hidden
                 />
               </div>
