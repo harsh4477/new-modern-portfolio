@@ -11,6 +11,7 @@ const Header = () => {
           {/* logo */}
           <Link href="/home">
             <Image
+              className="w-[150px] lg:w-[220px]"
               src="/my-logo-white.png"
               alt="logo"
               width={220}

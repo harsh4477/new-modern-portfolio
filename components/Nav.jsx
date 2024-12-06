@@ -78,7 +78,7 @@ const Nav = () => {
           </Link>
         ))}
       </div>
-      <div className="relative w-full h-[70px] bg-white/10 flex xl:hidden justify-center items-center rounded-lg">
+      <div className="relative w-full h-[70px] bg-[#1a1a1a] flex xl:hidden justify-center items-center rounded-lg">
         <ul className="grid grid-cols-5 w-full">
           {navData.map((link, i) => (
             <li key={i} className={`relative list-none w-[70px] h-[70px] z-10`}>
