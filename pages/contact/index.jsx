@@ -62,7 +62,7 @@ const Contact = () => {
 
   return (
     <div className="h-full bg-primary/100">
-      <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
+      <div className="container mx-auto py-6 lg:py-32 text-center xl:text-left flex items-center justify-center h-full">
         <div className="flex flex-col w-full max-w-[700px]">
           <motion.h2
             variants={fadeIn("up", 0.2)}
@@ -89,7 +89,7 @@ const Contact = () => {
             >
               {({ errors }) => (
                 <Form className="flex-1 flex flex-col gap-6 w-full mx-auto">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full overflow-auto">
                     <div className="flex flex-col gap-1">
                       <Field
                         className={`input ${

@@ -49,12 +49,12 @@ export const aboutData = [
     title: "experience",
     info: [
       {
-        title: "Web designer - Eastern Techno Solutions",
-        stage: "Jan 2020 - Apr 2021",
-      },
-      {
         title: "Web designer - La Net Team",
         stage: "Apr 2021 - Present",
+      },
+      {
+        title: "Web designer - Eastern Techno Solutions",
+        stage: "Jan 2020 - Apr 2021",
       },
     ],
   },
