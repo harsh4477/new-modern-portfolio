@@ -18,9 +18,10 @@ const Work = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h2 xl:mt-12"
+              className="text-5xl leading-normal xl:mt-12"
             >
-              My work <span className="text-accent">.</span>
+              A sneak peek into my designs
+              <span className="text-accent">.</span>
             </motion.h2>
             <motion.p
               variants={fadeIn("up", 0.4)}
@@ -29,8 +30,7 @@ const Work = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0 pl-0 lg:pl-11 xl:pl-0"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-              tempora eligendi, quisquam tempore sint reiciendis.
+              Browse my favourite creations.
             </motion.p>
           </div>
 

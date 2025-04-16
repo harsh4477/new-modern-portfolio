@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -17,8 +18,8 @@ module.exports = {
     screens: {
       sm: "640px",
       md: "768px",
-      lg: "960px",
-      xl: "1200px",
+      lg: "991px",
+      xl: "1199px",
     },
     extend: {
       colors: {
@@ -35,10 +36,10 @@ module.exports = {
       animation: {
         "spin-slow": "spin 6s linear infinite",
       },
-      fontFamily: {
-        poppins: [`var(--font-poppins)`, "sans-serif"],
-        sora: [`var(--font-sora)`, "sans-serif"],
-      },
+      // fontFamily: {
+      //   poppins: [`var(--font-poppins)`, "sans-serif"],
+      //   sora: [`var(--font-sora)`, "sans-serif"],
+      // },
     },
   },
   container: {

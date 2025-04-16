@@ -19,9 +19,9 @@ const Services = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h2 xl:mt-8"
+              className="text-5xl leading-normal xl:mt-8"
             >
-              What I Offer <span className="text-accent">.</span>
+              What do I have for you <span className="text-accent">.</span>
             </motion.h2>
             <motion.p
               variants={fadeIn("up", 0.4)}
@@ -30,8 +30,8 @@ const Services = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-              tempora eligendi, quisquam tempore sint reiciendis.
+              Every design has a story, and that story makes sense only when the
+              user can connect to it; the rest is just chaos.
             </motion.p>
           </div>
 

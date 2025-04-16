@@ -12,10 +12,10 @@ import {
 
 // nav data
 export const navData = [
-  { name: "home", path: "/", Icon: HiHome },
-  { name: "about", path: "/about", Icon: HiUser },
-  { name: "What I Offer", path: "/services", Icon: HiRectangleGroup },
-  { name: "work", path: "/work", Icon: HiViewColumns },
+  { name: "Home", path: "/", Icon: HiHome },
+  { name: "About", path: "/about", Icon: HiUser },
+  { name: "Services", path: "/services", Icon: HiRectangleGroup },
+  { name: "Work", path: "/work", Icon: HiViewColumns },
   {
     name: "contact",
     path: "/contact",

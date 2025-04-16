@@ -69,10 +69,20 @@ const Contact = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2 text-center mb-12"
+            className="text-5xl text-center leading-normal mb-12"
           >
-            Let's <span className="text-accent">connect.</span>
+            Discuss your next
+            <br /> <span className="text-accent">Dream Project</span>
           </motion.h2>
+          {/* <motion.p
+            variants={fadeIn("up", 0.3)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="mb-10 xl:mb-16 z-50 text-center"
+          >
+            Discuss your next dream project
+          </motion.p> */}
           <motion.div
             variants={fadeIn("up", 0.4)}
             initial="hidden"

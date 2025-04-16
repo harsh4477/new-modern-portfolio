@@ -18,33 +18,33 @@ import "swiper/css/pagination";
 const serviceData = [
   {
     Icon: RxCrop,
-    title: "Responsive Design",
+    title: "Design that fits",
     description:
-      "I ensure that all my websites are fully responsive and mobile-friendly, using frameworks like Bootstrap and Tailwind CSS.",
+      "Bootstrap and Tailwind CSS are the heart of design, thus, I make sure that my designs are the perfect fit for every device and are completely mobile-friendly without any design hiccups or last-minute turn-offs.",
   },
   {
     Icon: RxPencil2,
-    title: "Custom Designs:",
+    title: "Everything doesn’t suit everyone",
     description:
-      "I create custom designs and templates tailored to your brand's identity, ensuring a unique and impactful online presence.",
+      "Every project has its own design language. Thus, I create customized designs and templates that match your brand's identity, making sure that they are unique, inspiring, and create an impactful online presence.",
   },
   {
     Icon: RxRocket,
-    title: "SEO Optimization:",
+    title: "Let Google know your brand",
     description:
-      "My designs are optimized for search engines, helping your website rank higher and reach a larger audience.",
+      "A boring design is a total piss off, even for google. Thus, I make sure that my designs are well-optimized for search engines and support your website to rank higher and reach your target audience.",
   },
   {
     Icon: RxClock,
-    title: "Fast Turnaround:",
+    title: "Get yourself running in no time",
     description:
-      "I deliver high-quality work quickly, so your website is up and running in no time.",
+      "A designer is never off duty. I understand how important it is for your brand to fix design issues. Thus, I make sure that the high-quality work is delivered to you in no time.",
   },
   {
     Icon: RxFileText,
-    title: "Project Management:",
+    title: "Perfection is the key",
     description:
-      "From start to finish, I manage your project with regular communication and updates to ensure your vision is brought to life.",
+      "From planning to execution, I make sure that your dream project is accomplished on time with proper communication, documentation, and collaboration, well-suited for your target audience.",
   },
 ];
 

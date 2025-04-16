@@ -1,12 +1,6 @@
 import Link from "next/link";
 
-import {
-  RiInstagramLine,
-  RiGithubLine,
-  RiLinkedinLine,
-  RiCodepenLine,
-  RiWhatsappLine,
-} from "react-icons/ri";
+import { RiGithubLine, RiLinkedinLine, RiCodepenLine } from "react-icons/ri";
 
 export const socialData = [
   {

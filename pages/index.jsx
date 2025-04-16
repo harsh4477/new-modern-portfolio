@@ -19,10 +19,11 @@ const Home = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h1 z-50"
+              className="h1 z-50 mb-3"
             >
-              Transforming Ideas <br /> Into{" "}
-              <span className="text-accent">Digital Reality</span>
+              Your Ideas,
+              {/* <br />  */}
+              <span className="text-accent"> My Creativity</span>
             </motion.h1>
 
             {/* subtitle */}
@@ -33,10 +34,10 @@ const Home = () => {
               exit="hidden"
               className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 z-50"
             >
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Voluptate, exercitationem harum, quia nulla temporibus deleniti
-              libero veniam vero beatae numquam ducimus illum ab similique ipsam
-              tempore fugit quod laudantium debitis.
+              Making the user experience better, one screen at a time. Blending
+              stories with futuristic designs since 2014. Product designer and
+              developer keen to transform your brand with user-friendly,
+              intuitive, unique, and eye-catching designs.
             </motion.p>
 
             {/* btn */}

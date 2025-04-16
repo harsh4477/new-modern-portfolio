@@ -83,10 +83,10 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2"
+            className="text-5xl leading-normal"
           >
-            Captivating <span className="text-accent">stories</span> birth
-            magnificent designs.
+            Where words fail <span className="text-accent">Your design</span>{" "}
+            Outshines
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
@@ -94,9 +94,12 @@ const About = () => {
             animate="show"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            10 years ago, I begin freelancing as a developer. Since then, I've
-            done remote work for agencies, consulted for startups, and
-            collabrated on digital products for business and consumer use.
+            Design is the creative edge that speaks volumes for your brand. A
+            decade ago, when I started this journey, all I had was vision and a
+            dedication to building brands that not only appear but also reflect
+            your core values, unique selling point, and experience. Throughout
+            this journey, I have worked end-to-end, from shaping a brand to
+            nurturing it.
           </motion.p>
           <motion.div
             variants={fadeIn("right", 0.6)}
