@@ -5,13 +5,13 @@ import Socials from "../components/Socials";
 
 const Header = () => {
   return (
-    <header className="absolute z-30 w-full items-center xl:h-[90px]">
+    <header className="absolute z-30 w-full items-center">
       <div className="container mx-auto">
-        <div className="flex justify-between items-center gap-y-6 py-8">
+        <div className="flex justify-between items-center gap-y-6 py-5">
           {/* logo */}
           <Link href="/home">
             <Image
-              className="w-[150px] lg:w-[220px]"
+              className="w-[150px] lg:w-[190px]"
               src="/my-logo-white.png"
               alt="logo"
               width={220}

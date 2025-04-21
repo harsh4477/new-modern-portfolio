@@ -8,7 +8,7 @@ const ProjectsBtn = () => {
     <div className="mx-auto xl:mx-0">
       <Link
         href="/work"
-        className="relative w-[120px] lg:w-[185px] h-[120px] lg:h-[185px] flex justify-center items-center bg-white/10 rounded-full group z-50"
+        className="relative w-[120px] lg:w-[165px] h-[120px] lg:h-[165px] flex justify-center items-center bg-white/10 rounded-full group z-50 backdrop-blur-sm"
       >
         <Image
           src="/rounded-text.png"

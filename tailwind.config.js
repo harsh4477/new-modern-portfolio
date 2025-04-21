@@ -23,8 +23,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#000", //#131424
-        secondary: "#000", //#393A47
+        primary: "#000",
+        secondary: "#000",
         accent: "#F13024",
       },
       backgroundImage: {
@@ -35,6 +35,10 @@ module.exports = {
       },
       animation: {
         "spin-slow": "spin 6s linear infinite",
+      },
+      fontSize: {
+        clamph1: "clamp(30px, calc(4vw + 16px), 48px)",
+        clamph2: "clamp(30px, calc(4vw + 16px), 48px)",
       },
       // fontFamily: {
       //   poppins: [`var(--font-poppins)`, "sans-serif"],

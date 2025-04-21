@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "@next/font": "^13.4.4",
+    "@splidejs/react-splide": "^0.7.12",
     "emailjs-com": "^3.2.0",
     "formik": "^2.4.6",
     "framer-motion": "^10.12.16",

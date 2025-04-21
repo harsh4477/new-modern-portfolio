@@ -18,9 +18,9 @@ const Layout = ({ children }) => {
         <meta name="description" content="" />
         <meta
           name="keywords"
-          content="react, next, nextjs, html, css, javascript, js, modern-ui, modern-ux, portfolio, framer-motion, 3d-website, particle-effect"
+          content="react, next, nextjs, html, css, javascript, js, portfolio, framer-motion"
         />
-        <meta name="theme-color" content="#f13024" />
+        {/* <meta name="theme-color" content="#f13024" /> */}
         <link
           rel="apple-touch-icon"
           sizes="180x180"

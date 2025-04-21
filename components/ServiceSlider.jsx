@@ -1,19 +1,29 @@
 import {
   RxCrop,
   RxPencil2,
-  RxDesktop,
-  RxReader,
   RxRocket,
-  RxArrowTopRight,
   RxClock,
   RxFileText,
 } from "react-icons/rx";
-import { FreeMode, Pagination } from "swiper";
+import { Autoplay, FreeMode, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
+
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+// Default theme
+import "@splidejs/react-splide/css";
+
+// or other themes
+import "@splidejs/react-splide/css/skyblue";
+import "@splidejs/react-splide/css/sea-green";
+
+// or only core styles
+import "@splidejs/react-splide/css/core";
+
+// import "./splidejs/react-splide/css";
 
 const serviceData = [
   {
@@ -50,26 +60,68 @@ const serviceData = [
 
 const ServiceSlider = () => {
   return (
-    <Swiper
-      breakpoints={{
-        320: {
-          slidesPerView: 1,
-          spaceBetween: 15,
-        },
-        640: {
-          slidesPerView: 3,
-          spaceBetween: 15,
+    // <Swiper
+    //   breakpoints={{
+    //     320: {
+    //       slidesPerView: 1,
+    //       spaceBetween: 15,
+    //     },
+    //     640: {
+    //       slidesPerView: 3,
+    //       spaceBetween: 15,
+    //     },
+    //   }}
+    //   pagination={{
+    //     clickable: true,
+    //   }}
+    //   modules={[FreeMode, Pagination]}
+    //   freeMode
+    //   className="h-[240px] sm:h-[360px]"
+    // >
+    //   {serviceData.map((item, i) => (
+    //     <SwiperSlide key={i}>
+    //       <div className="bg-white/10 h-full rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointertransition-all duration-300">
+    //         {/* icon */}
+    //         <div className="text-4xl text-accent mb-4">
+    //           <item.Icon aria-hidden />
+    //         </div>
+
+    //         {/* title & description */}
+    //         <div className="mb-8">
+    //           <div className="mb-2 text-lg">{item.title}</div>
+    //           <p className="max-w-[350px] leading-normal">{item.description}</p>
+    //         </div>
+
+    //         {/* arrow */}
+    //         {/* <div className="text-3xl">
+    //           <RxArrowTopRight
+    //             className="group-hover:rotate-45 group-hover:text-accent transition-all duration-300"
+    //             aria-hidden
+    //           />
+    //         </div> */}
+    //       </div>
+    //     </SwiperSlide>
+    //   ))}
+    // </Swiper>
+    <Splide
+      options={{
+        type: "loop",
+        rewind: true,
+        perPage: 2,
+        perMove: 1,
+        gap: "20px",
+        drag: "free",
+        pagination: false,
+        autoplay: true,
+        breakpoints: {
+          767: {
+            perPage: 1,
+          },
         },
       }}
-      pagination={{
-        clickable: true,
-      }}
-      modules={[FreeMode, Pagination]}
-      freeMode
-      className="h-[240px] sm:h-[360px]"
     >
       {serviceData.map((item, i) => (
-        <SwiperSlide key={i}>
+        <SplideSlide key={i}>
           <div className="bg-white/10 h-full rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointertransition-all duration-300">
             {/* icon */}
             <div className="text-4xl text-accent mb-4">
@@ -79,7 +131,7 @@ const ServiceSlider = () => {
             {/* title & description */}
             <div className="mb-8">
               <div className="mb-2 text-lg">{item.title}</div>
-              <p className="max-w-[350px] leading-normal">{item.description}</p>
+              <p className="leading-normal">{item.description}</p>
             </div>
 
             {/* arrow */}
@@ -90,9 +142,9 @@ const ServiceSlider = () => {
               />
             </div> */}
           </div>
-        </SwiperSlide>
+        </SplideSlide>
       ))}
-    </Swiper>
+    </Splide>
   );
 };
 

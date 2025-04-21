@@ -83,7 +83,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="text-5xl leading-normal"
+            className="h2 mb-3"
           >
             Where words fail <span className="text-accent">Your design</span>{" "}
             Outshines
@@ -92,7 +92,7 @@ const About = () => {
             variants={fadeIn("right", 0.4)}
             initial="hidden"
             animate="show"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+            className="max-w-[500px] mx-auto xl:mx-0 mb-3 xl:mb-12 px-2 xl:px-0"
           >
             Design is the creative edge that speaks volumes for your brand. A
             decade ago, when I started this journey, all I had was vision and a

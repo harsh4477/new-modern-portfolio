@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-
 import ParticlesContainer from "../components/ParticlesContainer";
 import ProjectsBtn from "../components/ProjectsBtn";
 import Avatar from "../components/Avatar";
@@ -12,7 +11,7 @@ const Home = () => {
       <div className="bg-primary/100 h-full">
         {/* text */}
         <div className="w-full h-full">
-          <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
+          <div className="text-center flex flex-col justify-center xl:pt-20 xl:text-left h-full container mx-auto">
             {/* title */}
             <motion.h1
               variants={fadeIn("down", 0.2)}
@@ -32,7 +31,7 @@ const Home = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 z-50"
+              className="max-w-full xl:max-w-2xl xl:mx-0 mb-10 xl:mb-16 z-50"
             >
               Making the user experience better, one screen at a time. Blending
               stories with futuristic designs since 2014. Product designer and
@@ -40,7 +39,6 @@ const Home = () => {
               intuitive, unique, and eye-catching designs.
             </motion.p>
 
-            {/* btn */}
             <div className="flex justify-center xl:hidden relative">
               <ProjectsBtn />
             </div>
@@ -56,7 +54,7 @@ const Home = () => {
           </div>
         </div>
         {/* image */}
-        <div className="w-[1280px] h-full absolute right-0 bottom-0">
+        <div className="w-full h-full absolute right-0 bottom-0">
           {/* bg img */}
           {/* <div className="absolute top-0 right-0 w-full h-full bg-primary/100"></div> */}
           <div
