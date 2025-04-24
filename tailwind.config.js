@@ -37,8 +37,8 @@ module.exports = {
         "spin-slow": "spin 6s linear infinite",
       },
       fontSize: {
-        clamph1: "clamp(30px, calc(4vw + 16px), 48px)",
-        clamph2: "clamp(30px, calc(4vw + 16px), 48px)",
+        clamph1: "clamp(30px, calc(5vw), 48px)",
+        clamph2: "clamp(30px, calc(5vw), 48px)",
       },
       // fontFamily: {
       //   poppins: [`var(--font-poppins)`, "sans-serif"],

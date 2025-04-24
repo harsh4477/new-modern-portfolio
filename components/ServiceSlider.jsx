@@ -122,7 +122,7 @@ const ServiceSlider = () => {
     >
       {serviceData.map((item, i) => (
         <SplideSlide key={i}>
-          <div className="bg-white/10 h-full rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointertransition-all duration-300">
+          <div className="bg-white/10 h-full rounded-lg px-6 py-8 flex flex-col gap-x-6 sm:gap-x-0 group cursor-pointertransition-all duration-300">
             {/* icon */}
             <div className="text-4xl text-accent mb-4">
               <item.Icon aria-hidden />

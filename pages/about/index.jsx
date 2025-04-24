@@ -64,7 +64,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="h-full bg-primary/100 py-32 text-center xl:text-left">
+    <div className="h-full bg-primary/100 py-32">
       {/* <Circles /> */}
       <motion.div
         variants={fadeIn("right", 0.2)}
@@ -126,7 +126,7 @@ const About = () => {
           exit="hidden"
           className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
         >
-          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
+          <div className="flex gap-x-4 xl:gap-x-8 mb-4">
             {aboutData.map((item, itemI) => (
               <div
                 key={itemI}
@@ -141,13 +141,13 @@ const About = () => {
             ))}
           </div>
 
-          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
+          <div className="py-2 xl:py-6 flex flex-col gap-y-4 xl:gap-y-4">
             {aboutData[index].info.map((item, itemI) => (
               <div
                 key={itemI}
-                className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-center text-white/60"
+                className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 text-white/60"
               >
-                <div className="font-light mb-2 md:mb-0 text-left">
+                <div className="text-base font-light mb-1 md:mb-0 ">
                   {item.title}
                 </div>
                 <div className="hidden md:flex">-</div>
@@ -155,7 +155,7 @@ const About = () => {
 
                 <div className="flex gap-x-4">
                   {item.icons?.map((Icon, iconI) => (
-                    <div key={iconI} className="text-2xl text-white">
+                    <div key={iconI} className="text-xl lg:text-2xl text-white">
                       <Icon />
                     </div>
                   ))}
