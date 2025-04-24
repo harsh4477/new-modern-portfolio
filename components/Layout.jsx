@@ -12,7 +12,7 @@ import Nav from "../components/Nav";
 
 const Layout = ({ children }) => {
   return (
-    <main className={`page bg-site text-white bg-cover bg-no-repeat relative`}>
+    <main className={`page text-white bg-cover bg-no-repeat relative`}>
       <Head>
         <title>HarshPatel | Portfolio</title>
         <meta name="description" content="" />
@@ -41,11 +41,10 @@ const Layout = ({ children }) => {
         <link rel="manifest" href="./favicon_ions/site.webmanifest" />
       </Head>
 
-      <Nav />
       <Header />
-
       {/* main content */}
       {children}
+      <Nav />
     </main>
   );
 };

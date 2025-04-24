@@ -10,8 +10,8 @@ const Home = () => {
     <>
       <div className="bg-primary/100 h-full">
         {/* text */}
-        <div className="w-full h-full">
-          <div className="flex flex-col justify-center xl:pt-20 xl:text-left h-full container mx-auto">
+        <div className="w-full h-full py-4 lg:py-0">
+          <div className="flex flex-col xl:justify-center xl:pt-20 xl:text-left h-full container mx-auto ">
             {/* title */}
             <motion.h1
               variants={fadeIn("down", 0.2)}
@@ -70,7 +70,7 @@ const Home = () => {
             animate="show"
             exit="hidden"
             transition={{ duration: 1, ease: "easeInOut" }}
-            className="absolute bottom-16 xl:bottom-0 right-0 xl:right-[10%] z-0"
+            className="absolute bottom-16 xl:bottom-0 right-0 xl:right-[10%] z-10"
           >
             <Avatar />
           </motion.div>

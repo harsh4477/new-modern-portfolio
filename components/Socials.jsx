@@ -22,7 +22,7 @@ export const socialData = [
 
 const Socials = () => {
   return (
-    <div className="flex items-center gap-x-5 text-lg">
+    <div className="flex items-center gap-x-3 lg:gap-x-5 text-xl">
       {socialData.map((social, i) => (
         <Link
           key={i}
@@ -30,7 +30,7 @@ const Socials = () => {
           href={social.link}
           target="_blank"
           rel="noreferrer noopener"
-          className={` transition-all duration-300 hover:text-accent`}
+          className={`transition-all duration-300 hover:text-accent`}
         >
           <social.Icon aria-hidden />
           <span className="sr-only">{social.name}</span>

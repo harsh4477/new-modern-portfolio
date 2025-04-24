@@ -47,7 +47,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className="navigation flex flex-col items-center xl:justify-center gap-y-4 fixed h-max bottom-0 mt-auto xl:left-[2%] z-10 top-0 w-full xl:w-16 xl:max-w-md xl:h-screen">
+    <nav className="navigation flex flex-col items-center xl:justify-center gap-y-4 sticky h-max bottom-0 xl:left-[2%] z-10 top-0 w-full xl:w-16 xl:max-w-md xl:h-dvh pt-10">
       <div className="hidden xl:flex w-full xl:flex-col items-center justify-between xl:justify-center px-4 md:px-40 xl:px-0 md:py-3 h-[65px] xl:h-max bg-white/10 backdrop-blur-sm text-3xl xl:text-xl xl:rounded-full">
         {navData.map((link, i) => (
           <Link

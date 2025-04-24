@@ -64,7 +64,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="h-full bg-primary/100 py-32">
+    <div className="h-full bg-primary/100 py-4 lg:py-0">
       {/* <Circles /> */}
       <motion.div
         variants={fadeIn("right", 0.2)}
@@ -76,7 +76,7 @@ const About = () => {
         <Avatar />
       </motion.div>
 
-      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+      <div className="container mx-auto h-full flex flex-col lg:items-center xl:flex-row gap-x-6">
         <div className="flex-1 flex flex-col justify-center">
           <motion.h2
             variants={fadeIn("right", 0.2)}
@@ -153,7 +153,7 @@ const About = () => {
                 <div className="hidden md:flex">-</div>
                 <div className="text-left">{item.stage}</div>
 
-                <div className="flex gap-x-4">
+                <div className="flex gap-x-3">
                   {item.icons?.map((Icon, iconI) => (
                     <div key={iconI} className="text-xl lg:text-2xl text-white">
                       <Icon />

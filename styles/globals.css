@@ -25,7 +25,7 @@
     font-family: "National Park", sans-serif;
   }
   .page {
-    @apply w-full h-screen overflow-hidden;
+    @apply w-full h-dvh overflow-hidden;
   }
   .h1 {
     @apply text-clamph1 font-semibold leading-normal;
@@ -45,7 +45,7 @@
   }
   .input,
   .textarea {
-    @apply transition-all bg-transparent outline-none focus:border-white border border-white/20 placeholder:text-white/30 placeholder:font-light;
+    @apply transition-all bg-transparent outline-none focus:border-white border border-white/40 placeholder:text-white/40 placeholder:font-light;
   }
   .textarea {
     @apply w-full h-[180px] p-4 rounded-lg resize-none transition-all;
