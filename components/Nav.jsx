@@ -6,7 +6,6 @@ import {
   HiUser,
   HiViewColumns,
   HiRectangleGroup,
-  HiChatBubbleBottomCenterText,
   HiEnvelope,
 } from "react-icons/hi2";
 
@@ -35,7 +34,8 @@ const Nav = () => {
         setItemWidth(nav.clientWidth / navData.length);
       }
     };
-
+    const index = sessionStorage.getItem("activeIndex");
+    setActiveIndex(index);
     updateItemWidth(); // Set width initially
     window.addEventListener("resize", updateItemWidth); // Update width on resize
 
@@ -43,6 +43,7 @@ const Nav = () => {
   }, []);
 
   const handleClick = (index) => {
+    sessionStorage.setItem("activeIndex", index);
     setActiveIndex(index);
   };
 
@@ -89,14 +90,14 @@ const Nav = () => {
               >
                 <span
                   className={`relative flex text-2xl text-center duration-500  text-white ${
-                    i === activeIndex ? "-translate-y-9" : ""
+                    i == activeIndex ? "-translate-y-9" : ""
                   }`}
                 >
                   <link.Icon aria-hidden />
                 </span>
                 <span
                   className={`absolute text-white text-sm duration-500 w-max ${
-                    i === activeIndex
+                    i == activeIndex
                       ? "translate-y-2.5 flex opacity-100"
                       : "opacity-0 hidden"
                   }`}
