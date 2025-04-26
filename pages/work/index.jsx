@@ -12,7 +12,7 @@ const Work = () => {
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
           {/* text */}
-          <div className="flex xl:w-[30vw] flex-col lg:flex-row xl:flex-col mb-4 xl:mb-0">
+          <div className="flex xl:w-[30vw] flex-col mb-4 xl:mb-0">
             <motion.h2
               variants={fadeIn("up", 0.2)}
               initial="hidden"
@@ -40,13 +40,15 @@ const Work = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="w-full xl:max-w-[60%]"
+            className="w-full xl:max-w-[60%] relative z-20"
           >
             <WorkSlider />
           </motion.div>
         </div>
       </div>
-      <Bulb />
+      <div className="hidden md:block">
+        <Bulb />
+      </div>
     </div>
   );
 };

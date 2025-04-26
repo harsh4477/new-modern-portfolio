@@ -104,6 +104,7 @@ const ServiceSlider = () => {
     //   ))}
     // </Swiper>
     <Splide
+      className="!p-0 md:!p-12"
       options={{
         type: "loop",
         rewind: true,
@@ -111,10 +112,12 @@ const ServiceSlider = () => {
         perMove: 1,
         gap: "20px",
         drag: "free",
+        snap: true,
         pagination: false,
         autoplay: true,
         breakpoints: {
           767: {
+            arrows: false,
             perPage: 1,
           },
         },

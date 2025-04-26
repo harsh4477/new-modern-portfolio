@@ -92,7 +92,7 @@ const About = () => {
             variants={fadeIn("right", 0.4)}
             initial="hidden"
             animate="show"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-3 xl:mb-12 px-2 xl:px-0"
+            className="xl:max-w-[500px] xl:mx-auto mb-3 xl:mb-12 px-2 xl:px-0"
           >
             Design is the creative edge that speaks volumes for your brand. A
             decade ago, when I started this journey, all I had was vision and a

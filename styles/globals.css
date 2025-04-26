@@ -110,3 +110,18 @@
   border-top-left-radius: 20px;
   box-shadow: -1px -10px 0 0 #000;
 }
+.splide .splide__arrow {
+  opacity: 1;
+}
+.splide .splide__arrow svg {
+  fill: #f13024;
+}
+.splide .splide__arrow:hover:not(:disabled) svg {
+  fill: #cd2d25;
+}
+.splide .splide__arrow.splide__arrow--prev {
+  left: 0;
+}
+.splide .splide__arrow.splide__arrow--next {
+  right: 0;
+}
