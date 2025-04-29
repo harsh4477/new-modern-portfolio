@@ -36,7 +36,7 @@ export const aboutData = [
         ],
       },
       {
-        title: "Web Devloping",
+        title: "Web Developing",
         icons: [SiGithub, SiJavascript, SiReact],
       },
       {
@@ -49,11 +49,11 @@ export const aboutData = [
     title: "experience",
     info: [
       {
-        title: "Web designer - La Net Team",
+        title: "Web Designer - La Net Team",
         stage: "Apr 2021 - Present",
       },
       {
-        title: "Web designer - Eastern Techno Solutions",
+        title: "Web Designer - Eastern Techno Solutions",
         stage: "Jan 2020 - Apr 2021",
       },
     ],
