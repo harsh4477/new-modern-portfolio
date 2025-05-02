@@ -35,7 +35,9 @@ const Nav = () => {
       }
     };
     const index = sessionStorage.getItem("activeIndex");
-    setActiveIndex(index);
+    if (index) {
+      setActiveIndex(index);
+    }
     updateItemWidth(); // Set width initially
     window.addEventListener("resize", updateItemWidth); // Update width on resize
 
