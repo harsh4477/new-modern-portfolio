@@ -37,7 +37,7 @@ const Contact = () => {
           message: values.message,
           to_name: "Harsh Patel",
         },
-        "c93nU1-caQ6OLVoGh"
+        "eo78_5F6c0Vr88CWO"
       )
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
